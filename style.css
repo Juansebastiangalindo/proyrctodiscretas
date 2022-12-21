@@ -1,0 +1,177 @@
+html {
+    font-size: 62.5%;
+    font-family: Roboto;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    display: block;
+}
+
+.navbar {
+    width: 100%;
+    display: block;
+    padding: .8rem 0;
+    background-color: #70a1ff;
+}
+
+.nav-title {
+    display: inline-block;
+    color: #f1f2f6;
+    font-size: 18pt;
+    font-weight: bold;
+    padding-left: 2rem;
+    letter-spacing: .2rem;
+    text-shadow: .8rem .4rem 1.6rem rgba(0, 0, 0, .7);
+}
+
+.app {
+    height: calc(100vh - 72px);
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    background-color: #ced6e0;
+    padding-top: 2.8rem;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 3.2rem;
+    background-color: #5352ed ;
+    border-radius: 3.2rem;
+    backdrop-filter: blur(1.2rem);
+    box-shadow: .4rem 1.2rem 3.2rem 2rem rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba(200, 200, 200, 0.3);
+}
+
+.calculator--container {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem;
+    color: #f1f2f6;
+    background-color: rgba(200, 200, 200, 0.3);
+    border-radius: 0.4rem;
+}
+
+.calculator--container__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.calculator--container__content--field {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.calculator--container__content--legend {
+    letter-spacing: .08rem;
+    text-shadow: .8rem .4rem 1.6rem rgba(0, 0, 0, .7);
+}
+
+.calculator--container__content--input {
+    flex: 1;
+}
+
+.calculator--container__content--input:disabled {
+    color: #fff;
+}
+
+.calculator--container__content--legend,
+.calculator--container__content--label,
+.calculator--container__content--input {
+    font-size: 11pt;
+}
+
+.input-number {
+    width: 4rem;
+}
+
+.calculator--button {
+    flex: 1;
+    font-size: 11pt;
+}
+
+
+.diagram {
+    grid-column: 2 / span 1;
+}
+
+.results__content {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    width: 80%;
+    padding: 1.6rem 2.8rem;
+    border-radius: 2rem;
+    margin-bottom: 8rem;
+}
+
+#values, #operation {
+    color: #7bed9f;
+}
+
+.results__content--label {
+    visibility: hidden;
+}
+
+.calculator:first {
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+.calculator--operation__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* estilos diagram de venn */
+#myChart {
+    width: 60rem;
+    height: 60rem;
+    border-radius: 5px;
+    border: 2px solid #5352ed;
+    background: #f1f2f6;
+    padding: 2rem;
+    box-shadow: .4rem 1.2rem 3.2rem 2rem rgba( 31, 38, 135, 0.37 );
+}
+
+.chartCard {
+    width: 500px;
+    height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chartBox {
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    border:black;
+    background: rgb(255, 254, 255);
+}
+
+.calculator-result {
+    width: 50rem;
+}
+
+.calculator-result--container {
+    justify-content: flex-start !important;
+}
